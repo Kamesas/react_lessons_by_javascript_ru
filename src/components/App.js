@@ -6,7 +6,8 @@ function App () {
 	return (
 			<div>
 				<h1>App name</h1>
-				<Article article={fixtures[0]} str="string" boolem />
+				<Article article={fixtures[0]} />
+				<Article article={fixtures[1]} />
 			</div>
 		) 
 }
