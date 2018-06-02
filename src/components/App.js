@@ -7,7 +7,6 @@ function App () {
 			<div>
 				<h1>App name</h1>
 				<Article article={fixtures[0]} />
-				<Article article={fixtures[1]} />
 			</div>
 		) 
 }
