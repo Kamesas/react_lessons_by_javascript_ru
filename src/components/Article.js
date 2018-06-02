@@ -4,7 +4,7 @@ function Article (props) { //все данные приходят в props
 
 	const {article} = props //дуструктуризация см. ниже
  	const body = <section>{article.text}</section>
-
+	console.log('---', props)
 	return(
     	<div>
       		<h2>{article.title}</h2>
