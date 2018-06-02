@@ -2,12 +2,13 @@ import React from 'react'
 import Article from './Article'
 
 export default function ArticlesList ({articles}) {
-	return(
+	
+	const articleElements = articles.map(article => <li><Article article = {article} /></li>)
+
+	return(	
 
 		<ul>
-			<li><Article article = {articles[0]} /></li>
-			<li><Article article = {articles[1]} /></li>
-			<li><Article article = {articles[2]} /></li>
+			<li>{articleElements}</li>
 		</ul>
 
 	)	
