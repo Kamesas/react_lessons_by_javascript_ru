@@ -2,12 +2,6 @@ import React, {Component} from 'react'
 
 class Article extends Component {
 
-	// constructor(props) {
-	//     super(props);
-	// 	    this.state = {isOpen: true, };	    	    
-	// 	   	this.handleClick = handleClick.bind(this) //<button onClick={this.handleClick} >close</button>
- //  };
-  //or simlple
   state = {
   	isOpen: true
   }
@@ -27,19 +21,15 @@ class Article extends Component {
 
 	    	<div>
       		<h2>{article.title}</h2>
-      		<button onClick={this.handleClick} >{this.state.isOpen ? 'close' : 'open'}</button>
-      		<hr/>
+      		<button onClick={this.handleClick} >{this.state.isOpen ? 'close' : 'open'}</button>      		
 					{body}
-					<h3>creation date: {(new Date(article.date)).toDateString()}</h3>
+					<h6>creation date: {(new Date(article.date)).toDateString()}</h6>
+					<hr/>
       	</div>
 
 	    )		
 	}
 
 }
-
-// function handleClick () {
-// 	console.log('---', 'clicked')
-// }
 
 export default Article
